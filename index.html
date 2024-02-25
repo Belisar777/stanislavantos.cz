@@ -1,46 +1,240 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ve výstavbě - Stanislav Antoš do Senátu!</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
 
-        .container {
-            max-width: 600px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+	<head>
+		<title>Stanislav Antoš jandidát do senátu</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Ing. Stanislav Šec">
+		<meta name="robots" content="index, follow">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="stanislavantos.cz">
+		<meta name="title" property="og:title" content="Kandidát do senátu Stanislav Antoš">
+		<meta name="description" property="og:description" content="Kandidát do senátu Stanislav Antoš je starostou Domažlic.">
+		<meta name="keywords" property="og:keywords" content="">
+		<meta property="og:url" content="https://stanislavantos.cz/index.html">
+		<meta property="og:image" content="https://stanislavantos.cz/img/portret.jpg">
+		<meta property="og:image:alt" content="Stanislav Antoš kandidát do senátu">
+		<link rel="stylesheet" href="styles.min.css?v=1.0.0">
+		<script src="scripts.min.js?v=1.0.0"></script>
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
+		<link rel="manifest" href="./img/icons/site.webmanifest">
+	</head>
 
-        h1 {
-            color: #333;
-        }
+	<body>
+		<div class="w3-overlay w3-hide-large w3-animate-opacity menuCloser" title="Zavři menu" id="myOverlay"></div>
+		<div class="w3-top">
+			<div class="w3-bar w3-white w3-card" id="myNavbar">
+				<a href="#home" class="w3-bar-item">
+					<img class="logo" alt="logo" src="img/logo.webp">
+				</a>
+				<div class="w3-center w3-hide-small w3-hide-medium">
+					<a href="mailto:standant@seznam.cz" class="w3-bar-item w3-large w3-button"><span class="fa fa-envelope"></span> standant@seznam.cz</a>
+					<a href="tel:+420777131106" class="w3-bar-item w3-large w3-button"><span class="fa fa-phone"></span> 777 131 106</a>
+				</div>
+				<div class="w3-right w3-hide-small w3-hide-medium">
+					<a href="#about" class="w3-bar-item w3-large w3-button"><span class="fa fa-user"></span> O MNĚ</a>
+					<a href="#why" class="w3-bar-item w3-large w3-button"><span class="fa fa-life-ring"></span> PROČ</a>
+					<a href="#contact" class="w3-bar-item w3-large w3-button"><span class="fa fa-address-card-o"></span> KONTAKT</a>
+				</div>
+				<span class="menuOpener w3-bar-item w3-button w3-right w3-right w3-hide-large w3-xlarge">
+					<span class="fa fa-bars"></span>
+				</span>
+			</div>
+		</div>
+		<nav class="menuCloser w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" id="mySidebar">
+			<span class="w3-bar-item w3-button w3-xlarge w3-padding-16"><span class="fa fa-close w3-right"></span></span>
+			<a href="#about" class="w3-bar-item w3-button">O MNĚ</a>
+			<a href="#why" class="w3-bar-item w3-button">PROČ</a>
+			<a href="#contact" class="w3-bar-item w3-button">KONTAKT</a>
+		</nav>
+		<header class="w3-display-container w3-grayscale-min" id="home">
+			<div class="bigTitle w3-display-left w3-text-white">
+				<h1>Bc. Stanislav Antoš</h1>
+				<h2>Senátor PRO NÁŠ KRAJ</h2>
+				<p><a href="#contact" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off w3-hide-small w3-hide-medium">Zeptejte se</a></p>
+			</div>
+			<div class="w3-display-bottomleft w3-text-grey w3-xxxlarge">
+				<a href="https://www.facebook.com/stanislav.antos.7"><span class="fa fa-facebook-official w3-hover-opacity"></span></a>
+				<a href="mailto:standant@seznam.cz"><span class="fa fa-envelope w3-hover-opacity"></span></a>
+				<a href="tel:+420777131106"><span class="fa fa-phone w3-hover-opacity"></span></a>
+			</div>
+		</header>
+		<section class="w3-container" id="about">
+			<h3 class="w3-center"><span class="fa fa-user"></span> O MNĚ</h3>
+			<p class="w3-center w3-large">Moto: </p>
+			<div class="w3-row">
+				<div class="w3-threequarter">
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam eget nisl. Integer tempor. Sed ac dolor sit amet purus malesuada congue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis risus. Ut tempus purus at lorem. Phasellus rhoncus. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nunc tincidunt ante vitae massa.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam eget nisl. Integer tempor. Sed ac dolor sit amet purus malesuada congue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis risus. Ut tempus purus at lorem. Phasellus rhoncus. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nunc tincidunt ante vitae massa.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam eget nisl. Integer tempor. Sed ac dolor sit amet purus malesuada congue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis risus. Ut tempus purus at lorem. Phasellus rhoncus. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nunc tincidunt ante vitae massa.</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam eget nisl. Integer tempor. Sed ac dolor sit amet purus malesuada congue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis risus. Ut tempus purus at lorem. Phasellus rhoncus. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nunc tincidunt ante vitae massa.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam eget nisl. Integer tempor. Sed ac dolor sit amet purus malesuada congue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis risus. Ut tempus purus at lorem. Phasellus rhoncus. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nunc tincidunt ante vitae massa.
+					</p>
+				</div>
+				<div class="w3-quarter gallery">
+					<img src="img/portret2.webp" class="w3-image" alt="Bc. Stanislav Antoš">
+				</div>
+			</div>
+		</section>
+		<section class="w3-container w3-light-grey" id="work">
+			<h3 class="w3-center"><span class="fa fa-life-ring"></span> PROČ</h3>
+			<p class="w3-center w3-large">Neposkytujeme pouze právní služby, ale i lidský individuální přístup</p>
+			<div class="w3-row w3-padding-48 w3-center">
+				<div class="w3-quarter">
+					<span class="fa fa-arrows-alt w3-margin-bottom w3-jumbo w3-center"></span>
+					<p class="header">TÉMA</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam eget nisl. Integer tempor. Sed ac dolor sit amet purus malesuada congue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis risus. Ut tempus purus at lorem. Phasellus rhoncus. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nunc tincidunt ante vitae massa.
+					</p>
+				</div>
+				<div class="w3-quarter">
+					<span class="fa fa-diamond  w3-margin-bottom w3-jumbo"></span>
+					<p class="header">TÉMA</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam eget nisl. Integer tempor. Sed ac dolor sit amet purus malesuada congue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis risus. Ut tempus purus at lorem. Phasellus rhoncus. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nunc tincidunt ante vitae massa.
+					</p>
+				</div>
+				<div class="w3-quarter">
+					<span class="fa fa-balance-scale w3-margin-bottom w3-jumbo"></span>
+					<p class="header">TÉMA</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam eget nisl. Integer tempor. Sed ac dolor sit amet purus malesuada congue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis risus. Ut tempus purus at lorem. Phasellus rhoncus. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nunc tincidunt ante vitae massa.
+					</p>
+				</div>
+				<div class="w3-quarter">
+					<span class="fa fa-credit-card w3-margin-bottom w3-jumbo"></span>
+					<p class="header">TÉMA</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam eget nisl. Integer tempor. Sed ac dolor sit amet purus malesuada congue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis risus. Ut tempus purus at lorem. Phasellus rhoncus. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nunc tincidunt ante vitae massa.
+					</p>
+				</div>
+			</div>
+			<div class="w3-container w3-padding-24">
+				<div class="w3-section">
+					<div class="header"><span class="fa fa-handshake-o"></span> TEZE</div>
+					<div class="text">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam eget nisl. Integer tempor. Sed ac dolor sit amet purus malesuada congue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis risus. Ut tempus purus at lorem. Phasellus rhoncus. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nunc tincidunt ante vitae massa.
+					</div>
+				</div>
+				<div class="w3-section">
+					<div class="header"><span class="fa fa-handshake-o"></span> TEZE</div>
+					<div class="text">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam eget nisl. Integer tempor. Sed ac dolor sit amet purus malesuada congue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis risus. Ut tempus purus at lorem. Phasellus rhoncus. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nunc tincidunt ante vitae massa.
+					</div>
+				</div>
+				<div class="w3-section">
+					<div class="header"><span class="fa fa-handshake-o"></span> TEZE</div>
+					<div class="text">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam eget nisl. Integer tempor. Sed ac dolor sit amet purus malesuada congue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis risus. Ut tempus purus at lorem. Phasellus rhoncus. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nunc tincidunt ante vitae massa.
+					</div>
+				</div>
+				<div class="w3-section">
+					<div class="header"><span class="fa fa-handshake-o"></span> TEZE</div>
+					<div class="text">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+					</div>
+				</div>
+				<div class="w3-section">
+					<div class="header"><span class="fa fa-handshake-o"></span> TEZE</div>
+					<div class="text">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+					</div>
+				</div>
+				<div class="w3-section">
+					<div class="header"><span class="fa fa-handshake-o"></span> TEZE</div>
+					<div class="text">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+					</div>
+				</div>
+				<div class="w3-section">
+					<div class="header"><span class="fa fa-handshake-o"></span> TEZE</div>
+					<div class="text">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+					</div>
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam eget nisl. Integer tempor. Sed ac dolor sit amet purus malesuada congue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis risus. Ut tempus purus at lorem. Phasellus rhoncus. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nunc tincidunt ante vitae massa.
+				</p>
+			</div>
+			<h3 class="w3-center"><span class="fa fa-map-signs"></span> JAK NA TO?</h3>
+			<div class="w3-container w3-padding-24">
+				<div class="w3-section">
+					<div class="header">1. KROK</div>
+					<div class="text">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam eget nisl. Integer tempor. Sed ac dolor sit amet purus malesuada congue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis risus. Ut tempus purus at lorem. Phasellus rhoncus. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nunc tincidunt ante vitae massa.
+					</div>
+					<div class="header">2. KROK</div>
+					<div class="text">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam eget nisl. Integer tempor. Sed ac dolor sit amet purus malesuada congue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis risus. Ut tempus purus at lorem. Phasellus rhoncus. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nunc tincidunt ante vitae massa.
+					</div>
+					<div class="header">3. KROK</div>
+					<div class="text">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam eget nisl. Integer tempor. Sed ac dolor sit amet purus malesuada congue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis risus. Ut tempus purus at lorem. Phasellus rhoncus. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nunc tincidunt ante vitae massa.
+					</div>
+					<div class="header">4. KROK</div>
+					<div class="text">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nullam eget nisl. Integer tempor. Sed ac dolor sit amet purus malesuada congue. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Nullam dapibus fermentum ipsum. Duis risus. Ut tempus purus at lorem. Phasellus rhoncus. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nunc tincidunt ante vitae massa.
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="w3-container" id="contact">
+			<h3 class="w3-center"><span class="fa fa-address-card-o"></span> KONTAKT</h3>
+			<div class="w3-row">
+				<div class="w3-half w3-large w3-right">
+					<div class="w3-padding"><span class="fa fa-phone fa-fw w3-margin-right"></span><strong>Telefon:</strong> <a href="tel:+420777131106"> +420 777 131 106</a></div>
+					<div class="w3-padding"><span class="fa fa-envelope fa-fw w3-margin-right"> </span><strong>Email:</strong><a href="mailto:standant@seznam.cz"> standant@seznam.cz</a></div>
+					<div class="w3-padding">
+						<span class="fa fa-map-marker fa-fw w3-margin-right"></span><strong>Adresa:</strong>
+						<a href="https://mapy.cz/s/cefejaleje" target="_blank">
+							<address>
+								Nám. Míru 1 <br>
+								Domažlice<br>
+								344 01 <br>
+							</address>
+						</a>
+					</div>
+				</div>
+				<div class="w3-half gallery">
+					<img src="img/sidlo.jpg" alt="Místo, kde se spolu můžeme potkat." class="w3-card-2 w3-image w3-hover-opacity photoSidlo w3-right" />
+				</div>
+			</div>
+			<div class="w3-row w3-padding-48 w3-center">
+				<div>
+					<a href="https://mapy.cz/s/cefejaleje" target="_blank"><img src="./img/map.jpg" alt="Náhled mapy" class="w3-image"></a>
+				</div>
+			</div>
+		</section>
+		<footer class="w3-center w3-black w3-padding-64">
+			<a href="#home" class="w3-button w3-light-grey"><span class="fa fa-arrow-up w3-margin-right"></span>Zpět na začátek</a>
+			<div class="w3-xlarge w3-section">
+				<a href="https://www.facebook.com/stanislav.antos.7"><span class="fa fa-facebook-official w3-hover-opacity"></span></a>
+				<a href="mailto:standant@seznam.cz"><span class="fa fa-envelope w3-hover-opacity"></span></a>
+				<a href="tel:+420777131106"><span class="fa fa-phone w3-hover-opacity"></span></a>
+			</div>
+			<div>
+				<a href="https://sec.stanislav.eu" rel="nofollow" target="_blank">2024 | Ing. Stanislav Šec</a>
+			</div>
+		</footer>
+		<div id="modal" class="w3-modal w3-black">
+			<span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Zavřít okno"><span class="fa fa-close w3-right"></span></span>
+			<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+				<img id="modalImage" class="w3-image" alt="popisek">
+				<p id="caption" class="w3-opacity w3-large"></p>
+			</div>
+		</div>
+	</body>
 
-        p {
-            color: #666;
-            margin-bottom: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Stránka ve výstavbě</h1>
-        <h3>Stanislav Antoš do Senátu!</h3>
-        <p>Pracujeme na vytvoření této stránky. Brzy tu najdete více informací.</p>
-        <p>Děkujeme za vaši trpělivost.</p>
-    </div>
-</body>
 </html>
