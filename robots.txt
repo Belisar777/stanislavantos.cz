@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow:
 
 Sitemap: https://stanislavantos.cz/sitemap.xml
 
